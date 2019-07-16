@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Centered component smoke test should render correctly 1`] = `
+<Centered
+  classes={null}
+  component="div"
+/>
+`;
+
+exports[`Centered component smoke test should render correctly 2`] = `
+<div
+  className="root"
+/>
+`;

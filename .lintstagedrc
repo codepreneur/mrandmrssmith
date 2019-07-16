@@ -1,0 +1,10 @@
+{
+  "linters": {
+    "{src,jest}/**/*.js": "eslint",
+    "{src,jest}/**/*.{js,json}": ["prettier --write", "git add"]
+  },
+  "ignore": [
+    "package.json",
+    "package-lock.json"
+  ]
+}

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorMessage component smoke test should render correctly 1`] = `
+<ErrorMessage
+  classes={null}
+/>
+`;
+
+exports[`ErrorMessage component smoke test should render correctly 2`] = `
+<section
+  className="container"
+>
+  <WarningIcon
+    className="icon"
+  />
+  <div>
+    <WithStyles(ForwardRef(Typography))
+      gutterBottom={true}
+      variant="h6"
+    >
+      We are sorry, something went wrong.
+    </WithStyles(ForwardRef(Typography))>
+    <WithStyles(ForwardRef(Typography))
+      gutterBottom={false}
+      variant="body2"
+    >
+      <span
+        key="outer1"
+      >
+        Please, refresh your browser and try again.
+      </span>
+      <br
+        key="inner2"
+      />
+      <span
+        key="outer3"
+      >
+        If the problem persists, please contact tech support.
+      </span>
+    </WithStyles(ForwardRef(Typography))>
+  </div>
+</section>
+`;

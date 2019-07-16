@@ -1,0 +1,23 @@
+{
+  "rootDir": "../",
+  "automock": false,
+  "testURL": "http://localhost",
+  "testEnvironment": "jest-environment-jsdom-global",
+  "setupFilesAfterEnv": ["<rootDir>/jest/setupTestFramework.js"],
+  "setupFiles": ["jest-date-mock", "jest-prop-type-error"],
+  "snapshotSerializers": ["enzyme-to-json/serializer"],
+  "coverageDirectory": "<rootDir>/coverage",
+  "moduleNameMapper": {
+    "^.+\\.(css|less|scss|styl)$": "identity-obj-proxy",
+    "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/jest/fileMock.js"
+  },
+  "collectCoverageFrom": [
+    "<rootDir>/src/**/*.js",
+    "!<rootDir>/node_modules/",
+    "!<rootDir>/src/**/index.js",
+    "!<rootDir>/src/redux.js",
+    "!<rootDir>/src/reducers.js",
+    "!<rootDir>/src/sagas.js",
+    "!<rootDir>/src/newrelic.js"
+  ]
+}
